@@ -26,19 +26,16 @@ body {
 }
 
 
-.rectangle {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
 .nav .container {
     display: flex;
     justify-content: space-between;
+    border-bottom: black 1px solid;
+    margin-bottom: 40px;
 }
 
 .nav {
     margin-top: 30px;
+
 }
 
 .title {
@@ -72,4 +69,107 @@ body {
 .right__panel-menu {
     display: flex;
     column-gap: 40px;
+}
+
+.top {
+    margin-bottom: 60px;
+}
+
+.sales__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.sales__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #E1E1E1;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+}
+
+.sales__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.sales__item:nth-child(2) .sales__item-big {
+    color: #323232;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16.841px;
+    /* 76.549% */
+    text-transform: uppercase;
+    
+}
+.sales__desc li:nth-child(2) {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+    text-transform: uppercase;
+}
+
+
+.sales__item:nth-child(1) {
+    width: 526px;
+    height: 294px;
+    padding: 73px 73px 47px 119px;
+    column-gap: 43px;
+}
+
+.sales__item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+    column-gap: 24px;
+
+}
+
+.sales__item:nth-child(3) {
+    width: 526px;
+    height: 294px;
+    padding: 73px 46px 47px 110px;
+
+}
+
+.procent {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    border-radius: 10px;
+    background: #323232;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 11px 39px;
+}
+
+.liders__title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: #000 1px solid;
+}
+
+.liders__block {
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    grid-template-rows: repeat(4, 485px);
 }
